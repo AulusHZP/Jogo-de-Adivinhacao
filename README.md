@@ -70,7 +70,7 @@ jogo-adivinhacao/
 Durante o desenvolvimento deste projeto, utilizei recursos de Inteligência Artificial (IA), por meio do ChatGPT, em dois momentos principais:
 
 Aprendizado e uso da nova sintaxe do .NET (C#):
-Como eu ainda não tinha familiaridade com a linguagem C# e a estrutura mais recente do .NET, utilizei a IA para entender boas práticas, montar a estrutura do backend e aplicar corretamente a nova sintaxe da linguagem. Isso incluiu desde a criação de endpoints RESTful até o tratamento de erros e organização de arquivos.
+Como eu ainda não tinha familiaridade com a linguagem C# e a estrutura mais recente do .NET, utilizei a IA para aplicar corretamente a nova sintaxe da linguagem. 
 
 Auxílio na escrita deste README e apresentação do projeto:
 A IA também foi utilizada para estruturar e redigir partes deste arquivo de documentação, ajudando a descrever o funcionamento da aplicação, justificar escolhas técnicas e apresentar as funcionalidades de forma clara e objetiva.
