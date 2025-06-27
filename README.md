@@ -66,6 +66,24 @@ jogo-adivinhacao/
 
 ---
 
+## 🤖 Uso de Inteligência Artificial no Desenvolvimento
+Durante o desenvolvimento deste projeto, utilizei recursos de Inteligência Artificial (IA), por meio do ChatGPT, em dois momentos principais:
+
+Aprendizado e uso da nova sintaxe do .NET (C#):
+Como eu ainda não tinha familiaridade com a linguagem C# e a estrutura mais recente do .NET, utilizei a IA para entender boas práticas, montar a estrutura do backend e aplicar corretamente a nova sintaxe da linguagem. Isso incluiu desde a criação de endpoints RESTful até o tratamento de erros e organização de arquivos.
+
+Auxílio na escrita deste README e apresentação do projeto:
+A IA também foi utilizada para estruturar e redigir partes deste arquivo de documentação, ajudando a descrever o funcionamento da aplicação, justificar escolhas técnicas e apresentar as funcionalidades de forma clara e objetiva.
+
+O uso da IA foi feito como uma ferramenta de apoio ao aprendizado e produtividade, e todas as sugestões recebidas foram compreendidas, testadas e adaptadas por mim para atender aos requisitos do projeto.
+
+## 🧪 Ferramentas de Suporte
+Postman: utilizado para testar os endpoints da API backend e validar as respostas da aplicação durante o desenvolvimento.
+
+Git: controle de versão local do projeto.
+
+GitHub: repositório remoto para versionamento, compartilhamento e hospedagem do código-fonte do projeto.
+
 ## 📝 Licença
 
 Este projeto está sob a licença MIT. 
