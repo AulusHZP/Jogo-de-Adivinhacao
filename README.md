@@ -75,10 +75,10 @@ Como eu ainda não tinha familiaridade com a linguagem C# e a estrutura mais rec
 Auxílio na escrita deste README e apresentação do projeto:
 A IA também foi utilizada para estruturar e redigir partes deste arquivo de documentação, ajudando a descrever o funcionamento da aplicação, justificar escolhas técnicas e apresentar as funcionalidades de forma clara e objetiva.
 
-O uso da IA foi feito como uma ferramenta de apoio ao aprendizado e produtividade, e todas as sugestões recebidas foram compreendidas, testadas e adaptadas por mim para atender aos requisitos do projeto.
-
 Criação de testes automatizados: 
 A IA foi utilizada como apoio na elaboração de testes para o projeto, ajudando a estruturar casos de teste, entender o uso de frameworks como xUnit e garantir a cobertura das funcionalidades implementadas.
+
+O uso da IA foi feito como uma ferramenta de apoio ao aprendizado e produtividade, e todas as sugestões recebidas foram compreendidas, testadas e adaptadas por mim para atender aos requisitos do projeto.
 
 ## 🧪 Ferramentas de Suporte
 Postman: utilizado para testar os endpoints da API backend e validar as respostas da aplicação durante o desenvolvimento.
