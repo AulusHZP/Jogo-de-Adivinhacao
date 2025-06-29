@@ -77,6 +77,9 @@ A IA também foi utilizada para estruturar e redigir partes deste arquivo de doc
 
 O uso da IA foi feito como uma ferramenta de apoio ao aprendizado e produtividade, e todas as sugestões recebidas foram compreendidas, testadas e adaptadas por mim para atender aos requisitos do projeto.
 
+Criação de testes automatizados: 
+A IA foi utilizada como apoio na elaboração de testes para o projeto, ajudando a estruturar casos de teste, entender o uso de frameworks como xUnit e garantir a cobertura das funcionalidades implementadas.
+
 ## 🧪 Ferramentas de Suporte
 Postman: utilizado para testar os endpoints da API backend e validar as respostas da aplicação durante o desenvolvimento.
 
