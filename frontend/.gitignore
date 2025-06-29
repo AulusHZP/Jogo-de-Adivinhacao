@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Ignorar diretórios de build
+Backend.Tests/bin/
+Backend.Tests/obj/

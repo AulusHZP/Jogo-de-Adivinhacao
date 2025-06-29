@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState } from 'react'
 import './App.css'
 
@@ -17,10 +18,6 @@ function App() {
   const handleGuess = async (e) => {
     e.preventDefault()
     setLoading(true)
-    setFeedback('')
-    setIsCorrect(false)
-    setAttempts(0)
-    setNumber(null)
     try {
       // Envia o palpite para o backend
       const response = await fetch(`${API_URL}/guess`, {
@@ -33,12 +30,14 @@ function App() {
       if (!response.ok) {
         // Erro de validação ou backend
         setFeedback(data.message || 'Erro ao enviar palpite.')
+        setIsCorrect(false)
       } else {
         // Se acertou, mostra mensagem especial
         if (data.result === 'correct') {
           setNumber(data.number)
           setAttempts(data.attempts)
           setFeedback(`Parabéns! Você acertou o número ${data.number} em ${data.attempts} tentativa(s)!`)
+          setIsCorrect(true)
         } else {
           // Se não acertou, mostra dica (maior/menor)
           setFeedback(data.message)
@@ -46,10 +45,10 @@ function App() {
           setAttempts(data.attempts)
           setNumber(null)
         }
-        setIsCorrect(data.result === 'correct')
       }
     } catch (err) {
       setFeedback('Erro de conexão com o backend.')
+      setIsCorrect(false)
     }
     setLoading(false)
   }
@@ -57,7 +56,7 @@ function App() {
   // Função chamada ao clicar em "Nova rodada"
   const handleRestart = async () => {
     setLoading(true)
-    setFeedback('')
+    setFeedback('') // Limpa feedback ao reiniciar
     setIsCorrect(false)
     setGuess('')
     setAttempts(0)
@@ -78,6 +77,10 @@ function App() {
     // Remove qualquer caractere que não seja dígito
     const value = e.target.value.replace(/[^\d]/g, '')
     setGuess(value)
+    // Só limpa feedback se não estiver carregando e se o valor mudou significativamente
+    if (!loading && value !== guess) {
+      setFeedback('')
+    }
   }
 
   // Renderização do componente
@@ -104,7 +107,7 @@ function App() {
           </button>
         </form>
         {/* Botão para reiniciar o jogo */}
-        <button onClick={handleRestart} className="restart-btn" disabled={loading}>
+        <button onClick={handleRestart} className="restart-btn" disabled={loading || isCorrect}>
           Nova rodada
         </button>
         {/* Mensagem de feedback (acerto, dica, erro) */}
