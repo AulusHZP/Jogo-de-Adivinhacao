@@ -23,8 +23,8 @@ O usuário deve tentar adivinhar o número inteiro sorteado pelo sistema. A cada
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/aulushzp/jogo-adivinhacao.git
-cd jogo-adivinhacao
+git clone https://github.com/AulusHZP/Jogo-de-Adivinhacao.git
+cd Jogo-de-Adivinhacao
 ```
 
 ### 2. Inicie o backend
@@ -35,6 +35,8 @@ dotnet run
 ```
 
 ### 3. Inicie o frontend
+
+Em outro terminal, a partir da raiz do repositório:
 
 ```bash
 cd frontend
@@ -49,7 +51,7 @@ Acesse o frontend em [http://localhost:5173](http://localhost:5173)
 ## 📁 Estrutura
 
 ```
-jogo-adivinhacao/
+Jogo-de-Adivinhacao/
 ├── backend/
 │   ├── Controllers/
 │   ├── Program.cs
